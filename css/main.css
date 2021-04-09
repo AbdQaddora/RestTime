@@ -117,13 +117,17 @@ p{
 }
 
 .card-body p{
-    font-size: 14pt;
+    font-size: 16pt;
     text-align: center;
 }
 
 .card-body .btn{
+    font-size: 14pt;
     outline: none;
     position: absolute;
+    width: 33%;
     bottom: 20px;
     right: 33%;
 }
+
+/*  */
