@@ -1,6 +1,6 @@
 /* Mobile and tableat */
 @media (max-width: 767px){
-    .carousel-item{
+    .header .carousel-item{
         min-height:350px ;
         background-size:cover ;
     }
@@ -24,6 +24,10 @@
     #about p{
         font-size: 16pt;
         text-align: center;
+    }
+    
+    .clients .carousel-item p{
+        font-size: 14pt ;
     }
 }
 
