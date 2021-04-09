@@ -1,0 +1,49 @@
+/* Mobile and tableat */
+@media (max-width: 767px){
+    .carousel-item{
+        min-height:350px ;
+        background-size:cover ;
+    }
+
+    .carousel-item img{
+        min-height:350px ;
+        background-size:contain ;
+    }
+    .header .carousel-inner .carousel-caption{
+        top: 42%;
+        right: 5%;
+    }
+    .carousel-inner p{
+        font-size: 14pt;
+    }
+
+    .carousel-inner h2{
+        font-size: 18pt;
+    }
+
+    #about p{
+        font-size: 16pt;
+        text-align: center;
+    }
+}
+
+
+/* Small screens, laptops */
+@media (min-width:768px) and (max-width:991px){
+    .contactUs textarea{
+        margin-top: 15px;
+    }
+}
+
+
+
+/* mediaum secreen */
+@media (min-width:992px) and( max-width:1199px){
+
+}
+
+
+/* larg secreen */
+@media (min-width:1200px){
+
+}

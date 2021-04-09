@@ -43,7 +43,6 @@ p{
 
 /* head Style */
 .header .carousel-item{
-    background: #777;
     max-height: 100vh;
 }
 
@@ -121,10 +120,10 @@ p{
     text-align: center;
 }
 
-.card-body .btn{
+.card-body .btn{   
     outline: none;
     position: absolute;
-    width: 33%;
+    min-width: 33%;
     bottom: 20px;
     right: 33%;
 }
