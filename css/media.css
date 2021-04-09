@@ -29,6 +29,11 @@
     .clients .carousel-item p{
         font-size: 14pt ;
     }
+
+    .social .fa{
+        font-size: 30pt;
+        padding: 0; 
+    }
 }
 
 
