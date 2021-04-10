@@ -38,6 +38,18 @@
     .mainSaid{
         padding: 20vh 20px;
     }
+
+    .back1{
+        background-image: url(../images/bathbackMobile1.jpg);  
+    }
+
+    .back2{
+        background-image: url(../images/bathbackMobile2.jpg);  
+    }
+
+    .back3{
+        background-position:40% 0%; 
+    }
 }
 
 

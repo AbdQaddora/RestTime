@@ -197,11 +197,22 @@ footer h2 span{
     width: 100%;
     height: 100%;
     padding: 120px;
+    padding-top: 170px;
     text-align: center;
-    background-image: url(../images/bathback.jpg);  
     background-size:cover ;
 }
 
+.back1{
+    background-image: url(../images/bathback.jpg);  
+}
+
+.back2{
+    background-image: url(../images/bathback2.jpg);  
+}
+
+.back3{
+    background-image: url(../images/bathback3.jpg);  
+}
 .mainSaid h2{
     color: #8bc34a;
     background-color: #2125297c;
