@@ -46,11 +46,11 @@
                 <button type="button" class="btn  btn-outline-success openForm" data-bs-toggle="modal"
                     data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">احجز الان</button>
 
-            <div class="toast border-0 position-fixed bottom-0 end-0 m-3"
-                role="alert" aria-live="assertive" aria-atomic="true" id="toastBox">
+            <div class="toast border-0 position-fixed bottom-0 end-0 m-3" role="alert" aria-live="assertive"
+                aria-atomic="true" id="toastBox">
                 <div class="d-flex">
                     <div class="toast-body">
-                        تم تسجيل حجزك بنجاح
+
                     </div>
                 </div>
             </div>
@@ -66,7 +66,7 @@
                     <h5 class="modal-title" id="exampleModalLabel" id="liveToastBtn"> احجز الان</h5>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form id="my_form">
                         <div class="mb-3">
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" id="floatingInput" placeholder="رقم الهاتف">
@@ -74,7 +74,7 @@
                             </div>
                         </div>
                         <div class="mb-3">
-                            <select class="form-select" aria-label="Default select example">
+                            <select class="form-select" aria-label="Default select example" id = "select">
                                 <option selected>مكان الإقامة الحالي</option>
                                 <option value="1">غزة</option>
                                 <option value="2">خانيونس</option>
@@ -88,7 +88,8 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">إغلاق</button>
-                    <button type="button" class="btn btn-outline-success" onclick="toastShow()" data-bs-dismiss="modal">تأكيد الحجز</button>
+                    <button type="button" class="btn btn-outline-success" onclick="toastShow()" data-bs-dismiss="modal"
+                        id="my_button">تأكيد الحجز</button>
                 </div>
                 </form>
             </div>
@@ -114,6 +115,27 @@
             var toastHtmlElemant = document.getElementById("toastBox");
             var toastElemant = new bootstrap.Toast(toastHtmlElemant, option);
             toastElemant.show();
+        }
+
+        var my_form = document.getElementById("my_form"), button = document.getElementById("my_button");
+        my_form.onsubmit = function () {
+            return false;
+        }
+        var number = document.getElementById("floatingInput"), check = document.getElementById("flexCheckDefault") , select = document.getElementById("select");
+
+
+        button.onclick = function () {
+            if (number.value != "" && select.value != "مكان الإقامة الحالي" &&check.checked) {
+                document.querySelector(".toast-body").innerHTML = "تم تأكيد حجزك بنجاح";
+                toastShow();
+                setTimeout(function () {
+                    my_form.submit();
+                }, 5000);
+                return false;
+            } else {
+                document.querySelector(".toast-body").innerHTML = "يرجى ملء كافة الحقول";
+                toastShow();    
+            }
         }
     </script>
 </body>
