@@ -241,6 +241,8 @@ footer h2 span{
 .toast{
     background-color:   #212529;
     color: #8bc34a;
+    width: fit-content;
+    padding-left: 50px;
 }
 
 
