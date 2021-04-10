@@ -3,9 +3,6 @@
     font-family: 'El Messiri', sans-serif;
 }
 
-/* html{
-
-} */
 .shading{
     background-color: #21252941;
     width: 100%;
@@ -53,7 +50,7 @@ p{
     position: relative;
 }
 
-.header .carousel-inner .carousel-caption{
+.header .carousel-inner .carousel-caption, .contant{
     text-align: right;
     position: absolute;
     top: 42%;
@@ -72,7 +69,7 @@ p{
     margin: 60px auto;
 }
 
-#about h2{
+#about h2 ,.mainSaid h2{
     padding: 0;
     font-weight: bold;
     margin-bottom: 15px;
@@ -89,38 +86,38 @@ p{
 #ourServices h2{
     color: #212529;
 }
-.card{
+#ourServices .card{
     width: 90%;
     margin: 50px auto;
     height: 450px;
     border-radius: 15px;
 }
 
-.card img{
+#ourServices .card img{
     height: 220px;
     background-size:contain;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 
-.card-body h5{
+#ourServices .card-body h5{
     font-size: 18pt;
     color: #689238;
     margin-bottom: 25px;
     position: relative;
 }
 
-.card-body{
+#ourServices .card-body{
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
 
-.card-body p{
+#ourServices .card-body p{
     font-size: 16pt;
     text-align: center;
 }
 
-.card-body .btn{   
+#ourServices .card-body .btn{   
     outline: none;
     position: absolute;
     min-width: 33%;
@@ -183,3 +180,63 @@ footer h2{
 footer h2 span{
     color: white;
 }
+
+
+/* bath */
+.bath{
+    background-size: cover;
+    height: 100vh;
+    padding: 0 ;
+}
+
+
+/* mainSaid */
+
+
+.mainSaid{
+    width: 100%;
+    height: 100%;
+    padding: 120px;
+    text-align: center;
+    background-image: url(../images/bathback.jpg);  
+    background-size:cover ;
+}
+
+.mainSaid h2{
+    color: #8bc34a;
+    background-color: #2125297c;
+    padding: 15px;
+    width: fit-content;
+    border-radius: 15px;
+    display: block;
+    margin: 20px auto;
+}
+
+.mainSaid p{
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #2125297c;
+    padding: 15px;
+}
+
+.openForm{
+    display: block;
+    margin: 20px auto;
+    font-size: 18pt;
+}
+
+.btn-outline-success{
+    color: #8bc34a;
+    border: 2px solid #8bc34a;
+    outline: none;
+}
+
+.btn-outline-success:hover{
+    border: 2px solid #8bc34a;
+    background-color: #8bc34a;
+    color: white;
+}
+
+
+
