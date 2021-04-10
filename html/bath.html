@@ -43,47 +43,59 @@
             <h2>حمام</h2>
             <p> يتميّز في تنظيف، وتقشير البشرة، ونقع الجسم بالماء الساخن، ثمّ وضع غسول الطين، وبعدها الاستحمام
                 بالصابون ذي اللون الأسود، ثُم الاستحمام بالماء البارد لإغلاق المسامات
-                <button type="button" class="btn  btn-outline-success   openForm" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                data-bs-whatever="@getbootstrap">احجز الان</button>
-            </p>
+                <button type="button" class="btn  btn-outline-success openForm" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">احجز الان</button>
 
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel"> احجز الان</h5>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="mb-3">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" id="floatingInput"
-                                            placeholder="رقم الهاتف">
-                                        <label for="floatingInput">رقم الهاتف</label>
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>مكان الإقامة الحالي</option>
-                                        <option value="1">غزة</option>
-                                        <option value="2">خانيونس</option>
-                                        <option value="3">رفح</option>
-                                    </select>
-                                </div>
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault"> لتأكيد الحجز عليك دفع مبلغ
-                                    ١٠ ريال</label>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">إغلاق</button>
-                            <button type="button" class="btn btn-outline-success">تأكيد الحجز</button>
-                        </div>
+            <div class="toast border-0 position-fixed bottom-0 end-0 m-3"
+                role="alert" aria-live="assertive" aria-atomic="true" id="toastBox">
+                <div class="d-flex">
+                    <div class="toast-body">
+                        تم تسجيل حجزك بنجاح
                     </div>
                 </div>
             </div>
-        </div>  
+        </div>
+
+    </div>
+    </p>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" id="liveToastBtn"> احجز الان</h5>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="رقم الهاتف">
+                                <label for="floatingInput">رقم الهاتف</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>مكان الإقامة الحالي</option>
+                                <option value="1">غزة</option>
+                                <option value="2">خانيونس</option>
+                                <option value="3">رفح</option>
+                            </select>
+                        </div>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault"> لتأكيد الحجز عليك دفع مبلغ
+                            ١٠ ريال</label>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">إغلاق</button>
+                    <button type="button" class="btn btn-outline-success" onclick="toastShow()" data-bs-dismiss="modal">تأكيد الحجز</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    </div>
     </div>
 
     </section>
@@ -92,6 +104,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
+    <script>
+        var option = {
+            animation: true,
+            delay: 5000
+        };
+
+        function toastShow() {
+            var toastHtmlElemant = document.getElementById("toastBox");
+            var toastElemant = new bootstrap.Toast(toastHtmlElemant, option);
+            toastElemant.show();
+        }
+    </script>
 </body>
 
 </html>
