@@ -74,7 +74,7 @@
                             </div>
                         </div>
                         <div class="mb-3">
-                            <select class="form-select" aria-label="Default select example" id = "select">
+                            <select class="form-select" aria-label="Default select example" id="select">
                                 <option selected>مكان الإقامة الحالي</option>
                                 <option value="1">غزة</option>
                                 <option value="2">خانيونس</option>
@@ -105,39 +105,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
-    <script>
-        var option = {
-            animation: true,
-            delay: 5000
-        };
-
-        function toastShow() {
-            var toastHtmlElemant = document.getElementById("toastBox");
-            var toastElemant = new bootstrap.Toast(toastHtmlElemant, option);
-            toastElemant.show();
-        }
-
-        var my_form = document.getElementById("my_form"), button = document.getElementById("my_button");
-        my_form.onsubmit = function () {
-            return false;
-        }
-        var number = document.getElementById("floatingInput"), check = document.getElementById("flexCheckDefault") , select = document.getElementById("select");
-
-
-        button.onclick = function () {
-            if (number.value != "" && select.value != "مكان الإقامة الحالي" &&check.checked) {
-                document.querySelector(".toast-body").innerHTML = "تم تأكيد حجزك بنجاح";
-                toastShow();
-                setTimeout(function () {
-                    my_form.submit();
-                }, 5000);
-                return false;
-            } else {
-                document.querySelector(".toast-body").innerHTML = "يرجى ملء كافة الحقول";
-                toastShow();    
-            }
-        }
-    </script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
