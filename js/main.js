@@ -11,7 +11,7 @@ var toastElemant = new bootstrap.Toast(toastHtmlElemant, option);
 function toastShow() {
     toastElemant.show();
 }
-function toastHide(){
+function toastHide() {
     toastElemant.hide();
 }
 
@@ -29,7 +29,7 @@ var number = document.getElementById("floatingInput"), check = document.getEleme
 button.onclick = function () {
     toastHide();
     if (number.value != "" && select.value != "مكان الإقامة الحالي" && check.checked) {
-        if (!isNaN(number.value)) {
+        if (numberValidation(number.value)) {
             document.querySelector(".toast-body").innerHTML = "تم تأكيد حجزك بنجاح";
             toastShow();
             setTimeout(function () {
@@ -37,7 +37,7 @@ button.onclick = function () {
             }, 5000);
             return false;
         } else {
-            document.querySelector(".toast-body").innerHTML = "يرجى إدخال رقم هاتف صالح";
+            document.querySelector(".toast-body").innerHTML = "يرجى إدخال رقم هاتف سعودي صالح";
             toastShow();
         }
 
@@ -47,4 +47,11 @@ button.onclick = function () {
     }
 }
 
+function numberValidation(input) {
+    var str = input;
+    str = str.replace(/ /g,'');
+    var patt = new RegExp(/^(009665|9665|\+9665|05|5)(5|0|3|6|4|9|1|8|7)([0-9]{7})$/);
+    var res = patt.test(str);
+    return res;
+  }
 
