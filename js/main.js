@@ -42,8 +42,7 @@ button.onclick = function () {
         }
 
     } else {
-        document.querySelector(".toast-body").innerHTML = "يرجى ملء كافة الحقول";
-        toastShow();
+
     }
 }
 
