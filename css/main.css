@@ -86,22 +86,39 @@ p{
 #ourServices h2{
     color: #212529;
 }
+
 #ourServices .card{
-    width: 90%;
-    margin: 50px auto;
+    margin-top: 50px;
     height: 450px;
+    width: 100%;
     border-radius: 15px;
 }
 
-#ourServices .card img{
+#ourServices .card-img{
     height: 220px;
-    background-size:contain;
+    background-size:cover;
+    background-position:center ;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 
+
+#ourServices .card-img1{
+    background-image: url(../images/MassageBath.jpg);
+}
+
+#ourServices .card-img2{
+    background-image: url(../images/Massage.jpg);
+}
+#ourServices .card-img3{
+    background-image: url(../images/Pedicure.jpg);
+}
+#ourServices .card-img4{
+    background-image: url(../images/DeepTissueMassage.jpg);
+}
+
 #ourServices .card-body h5{
-    font-size: 18pt;
+    font-size: 16pt;
     color: #689238;
     margin-bottom: 25px;
     position: relative;
@@ -113,7 +130,7 @@ p{
 }
 
 #ourServices .card-body p{
-    font-size: 16pt;
+    font-size:14pt;
     text-align: center;
 }
 
@@ -122,7 +139,7 @@ p{
     position: absolute;
     min-width: 33%;
     bottom: 20px;
-    right: 33%;
+    right: 30%;
 }
 
 /* clients */
@@ -212,6 +229,10 @@ footer h2 span{
 
 .back3{
     background-image: url(../images/bathback3.jpg);  
+}
+
+.back4{
+    background-image: url(../images/DeepMassageBack.jpg);  
 }
 .mainSaid h2{
     color: #8bc34a;

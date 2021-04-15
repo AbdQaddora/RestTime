@@ -43,20 +43,31 @@
         background-image: url(../images/bathbackMobile1.jpg);  
     }
 
-    .back2{
+    .back2 , .back4{
         background-image: url(../images/bathbackMobile2.jpg);  
     }
 
+    .back4 p{
+        font-size: 16pt;
+    }
+
+    .back4 h2{
+        font-size: 22pt;
+    }
     .back3{
         background-position:40% 0%; 
+    }
+    
+    #ourServices .card-body .btn{
+        right: 33%;
     }
 }
 
 
 /* Small screens, laptops */
 @media (min-width:768px) and (max-width:991px){
-    .contactUs textarea{
-        margin-top: 15px;
+    #ourServices .card-body .btn{
+        right: 33%;
     }
 }
 
