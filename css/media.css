@@ -39,22 +39,22 @@
         padding: 20vh 20px;
     }
 
-    .back1{
-        background-image: url(../images/bathbackMobile1.jpg);  
+    .bathBack{
+        background-image: url(../images/bath/bathbackMobile.jpg);  
     }
 
-    .back2 , .back4{
-        background-image: url(../images/bathbackMobile2.jpg);  
+    .massageBack , .deepMassageBack{
+        background-image: url(../images/Massage/MassagebackMobile.jpg);  
     }
 
-    .back4 p{
+    .deepMassageBack p{
         font-size: 16pt;
     }
 
-    .back4 h2{
+    .deepMassageBack h2{
         font-size: 22pt;
     }
-    .back3{
+    .pedicaureBack{
         background-position:40% 0%; 
     }
     

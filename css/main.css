@@ -12,6 +12,7 @@
 }
 
 
+
 h2{
     font-size: 26pt;
     padding: 10px 15px;
@@ -26,6 +27,11 @@ p{
 #secoundColor{
     color: #8bc34a;
 }
+
+.dropdown-menu a{
+    text-align: right;
+}
+
 .navbar-brand{
     font-size: 22pt;
 }
@@ -104,17 +110,17 @@ p{
 
 
 #ourServices .card-img1{
-    background-image: url(../images/MassageBath.jpg);
+    background-image: url(../images/index/MassageBath.jpg);
 }
 
 #ourServices .card-img2{
-    background-image: url(../images/Massage.jpg);
+    background-image: url(../images/index/Massage.jpg);
 }
 #ourServices .card-img3{
-    background-image: url(../images/Pedicure.jpg);
+    background-image: url(../images/index/Pedicure.jpg);
 }
 #ourServices .card-img4{
-    background-image: url(../images/DeepTissueMassage.jpg);
+    background-image: url(../images/index/DeepTissueMassage.jpg);
 }
 
 #ourServices .card-body h5{
@@ -219,20 +225,20 @@ footer h2 span{
     background-size:cover ;
 }
 
-.back1{
-    background-image: url(../images/bathback.jpg);  
+.bathBack{
+    background-image: url(../images/bath/bathback.jpg);  
 }
 
-.back2{
-    background-image: url(../images/bathback2.jpg);  
+.massageBack{
+    background-image: url(../images/Massage/Massageback.jpg);  
 }
 
-.back3{
-    background-image: url(../images/bathback3.jpg);  
+.pedicaureBack{
+    background-image: url(../images/Pedicure/PedicureBack.jpg);  
 }
 
-.back4{
-    background-image: url(../images/DeepMassageBack.jpg);  
+.deepMassageBack{
+    background-image: url(../images/DeepMassage/DeepMassageBack.jpg);  
 }
 .mainSaid h2{
     color: #8bc34a;
