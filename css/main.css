@@ -52,6 +52,7 @@ p{
 .header .carousel-item img{
     background-size:contain;
 }
+
 .header .carousel-inner{
     position: relative;
 }
@@ -59,16 +60,20 @@ p{
 .header .carousel-inner .carousel-caption, .contant{
     text-align: right;
     position: absolute;
-    top: 42%;
-    right: 12%;
+    top: 37%;
+    right: 15%;
     z-index: 2;
 }
+
 .header .carousel-inner .carousel-caption h2{
     width: fit-content;
     border-radius: 10px;
     background-color:#212529 ;
 }
-
+.carousel-control-prev-icon , .carousel-control-next-icon{
+    display: inline-block !important;
+    text-align: center;
+}
 /* Start Section About */
 
 #about{
