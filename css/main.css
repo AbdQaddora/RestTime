@@ -24,8 +24,8 @@ p{
     text-align: right;
 }
 /* nav style */
-#secoundColor{
-    color: #8bc34a;
+#secoundColor , .active{
+    color: #8bc34a !important;
 }
 
 .dropdown-menu a{
@@ -72,7 +72,7 @@ p{
 /* Start Section About */
 
 #about{
-    margin: 60px auto;
+    padding-top: 90px ;
 }
 
 #about h2 ,.mainSaid h2{
@@ -88,6 +88,9 @@ p{
 
 
 /* our Services Section */
+#ourServices{
+    padding-top: 90px ;
+}
 
 #ourServices h2{
     color: #212529;

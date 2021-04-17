@@ -95,6 +95,14 @@ function numberValidation(input) {
     return res;
 }
 
+// For move active class
+function moveActive(id){
+    var array = document.querySelectorAll(".nav-link");
+    array.forEach(element => {
+        element.classList.remove("active");
+    });
+    document.querySelector("#nav" + id).classList.add("active");
+}
 
 
 
