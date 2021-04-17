@@ -25,13 +25,13 @@ my_form.onsubmit = function () {
 
 
 
-var number = document.getElementById("floatingInput"), check = document.getElementById("flexCheckDefault"), select = document.getElementById("select");
+var number = document.getElementById("floatingInput"), check = document.getElementById("flexCheckDefault"),
+ selectPlace = document.getElementById("selectPlace") , selectDoctor = document.getElementById("selectDoctor") , selectSession = document.getElementById("selectSession");
 button.onclick = function () {
     toastHide();
-    if (number.value != "" && select.value != "مكان الإقامة الحالي" && check.checked) {
+    if (number.value != "" && selectPlace.value != "مكان الإقامة الحالي" && selectDoctor.value != "الطبيب المسؤول عن الجلسة" && selectSession.value != "زمن الجلسة" && check.checked) {
         if (numberValidation(number.value)) {
             emptyInput();   
-            console.log(select.value);
             button.setAttribute("data-bs-dismiss", "modal");
             button.click();
             document.querySelector(".toast-body").innerHTML = "تم تأكيد حجزك بنجاح";
@@ -61,10 +61,22 @@ function emptyInput() {
         number.style = "border-color: rgb(206, 212, 218) ";
     }
 
-    if (select.value == "مكان الإقامة الحالي") {
-        select.style = "border: 2px solid red;";
+    if (selectPlace.value == "مكان الإقامة الحالي") {
+        selectPlace.style = "border: 2px solid red;";
     } else {
-        select.style = "border-color: rgb(206, 212, 218) ";
+        selectPlace.style = "border-color: rgb(206, 212, 218) ";
+    }
+
+    if (selectDoctor.value == "الطبيب المسؤول عن الجلسة") {
+        selectDoctor.style = "border: 2px solid red;";
+    } else {
+        selectDoctor.style = "border-color: rgb(206, 212, 218) ";
+    }
+
+    if (selectSession.value == "زمن الجلسة") {
+        selectSession.style = "border: 2px solid red;";
+    } else {
+        selectSession.style = "border-color: rgb(206, 212, 218) ";
     }
 
 
