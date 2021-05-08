@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="./images/icon/logo.jpeg" type="image/x-icon">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/media.css">
   <title>RestTime</title>
@@ -29,13 +30,13 @@
       <div class="collapse navbar-collapse" id="Dropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" onclick="moveActive(0);" id = "nav0">الرئيسية</a>
+            <a class="nav-link active" aria-current="page" href="#" onclick="moveActive(0);" id="nav0">الرئيسية</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about" onclick="moveActive(1);" id = "nav1">من نحن</a>
+            <a class="nav-link" href="#about" onclick="moveActive(1);" id="nav1">من نحن</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#ourServices" onclick="moveActive(2);" id = "nav2">خدماتنا</a>
+            <a class="nav-link" href="#ourServices" onclick="moveActive(2);" id="nav2">خدماتنا</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -103,7 +104,7 @@
   <div class="container text-center" id="ourServices">
     <h2 class="">خدماتنا</h2>
     <div class="row">
-      <div class="col-lg-3 col-md-6">
+      <div class="col-lg-4 col-md-6">
         <div class="card">
           <div class="card-img card-img1"></div>
           <div class="card-body">
@@ -113,7 +114,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6">
+      <div class="col-lg-4 col-md-6">
         <div class="card">
           <div class="card-img card-img2"></div>
           <div class="card-body">
@@ -123,7 +124,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6 ">
+      <div class="col-lg-4 col-md-6 ">
         <div class="card">
           <div class="card-img card-img3"></div>
           <div class="card-body">
@@ -133,7 +134,9 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6">
+    </div>
+    <div class="row justify-content-md-center">
+      <div class="col-lg-4 col-md-6">
         <div class="card">
           <div class="card-img card-img4"></div>
           <div class="card-body">
@@ -143,7 +146,20 @@
           </div>
         </div>
       </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-img card-img5"></div>
+          <div class="card-body">
+            <h5 class="card-title">سهرات المساج</h5>
+            <p class="card-text"> اجمل والطف السهرات لتعيش الاجواء المليئة بالمتعة والجمال مع طاقم جديد وبعناية خاصة من
+              رست تايم</p>
+            <a href="./html/party.html" class="btn btn-outline-success">احجز موعدك</a>
+          </div>
+        </div>
+      </div>
     </div>
+
+  </div>
   </div>
   <!-- End section ourServices -->
 
@@ -151,28 +167,43 @@
   <div id="carouselExampleControls" class="carousel slide clients" data-bs-ride="carousel">
     <div class="carousel-inner">
       <h2>ماذا يقول عنا العملاء ؟ </h2>
+      <div class="carousel-item">
+        <div>
+          <p> <span>عبد الله : </span>انا تحسن جسمي جدا بفضلكوا افضل طاقم رست تايم وهاد غير المعامله المليئه بالرقي
+            والذوق</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div>
+          <p> <span>مريم : </span> المكان جميل وشيك انا كنت مطمنه جدا فيه بعد مطمنت انه مرخص وكفايه اسلوب المتخصصات
+            المتميز ربنا يوفقكوا</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div>
+          <p> <span>خالد : </span> المركز رائع جدا من حيث الطاقم الطيف والمكان الراقي والاسترخاء على يد الطاقم المميز
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div>
+          <p> <span>سمير : </span>السهره اشي رائعا جدا جدا الي بيجربها مره هيدمنها اقسم بالله</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div>
+          <p> <span>ريم : </span>مركز محترم ورائعا واتمنى لكم كل الاستمرار والتوفيق في مجال عملكم الرائع</p>
+        </div>
+      </div>
       <div class="carousel-item active">
         <div>
-          <p> <span>عبد الله : </span> هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات
-            المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة
-            مجهولة برص مجموعة من الأحرف بشكل عشوائي أخذتها من نص</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div>
-          <p> <span>أحمد : </span> هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع
-            ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة برص
-            مجموعة من الأحرف بشكل عشوائي أخذتها من نص</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div>
-          <p> <span>خالد : </span> هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع
-            ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة برص
-            مجموعة من الأحرف بشكل عشوائي أخذتها من نص</p>
+          <p class = "p-text-left"> <span>steav : </span>It was a very special experience, the services here are classy, ​​and dealing with
+            customers is one of the best I've seen. I enjoyed the time I spent here.</p>
         </div>
       </div>
     </div>
+
+  </div>
   </div>
   <!-- End section What did clients say about us? -->
   <!-- Start sochial media section -->

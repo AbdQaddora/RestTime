@@ -61,6 +61,12 @@
     #ourServices .card-body .btn{
         right: 33%;
     }
+    .img_logo{
+        width: 90%;
+        height: 250px;
+        margin: 0 auto 10px;
+        margin-bottom: 10px;
+    }
 }
 
 

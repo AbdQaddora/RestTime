@@ -33,19 +33,20 @@ button.onclick = function () {
         if (numberValidation(number.value)) {
             emptyInput();   
             button.setAttribute("data-bs-dismiss", "modal");
+            button.setAttribute("data-bs-target", "#staticBackdrop");
             button.click();
             document.querySelector(".toast-body").innerHTML = "تم تأكيد حجزك بنجاح";
             number.style = "border-color: rgb(206, 212, 218) ";
             toastShow();
-            setTimeout(function () {
-                my_form.submit();
-            }, 5000);
-            return false;
+            // setTimeout(function () {
+            //     my_form.submit();
+            // }, 5000);
+            // return false;
         } else {
             emptyInput();
-            number.style = "border: 2px solid red;";
-            document.querySelector(".toast-body").innerHTML = "يرجى إدخال رقم هاتف سعودي صالح";
-            toastShow();
+            var errorText = document.querySelector("#errorText");
+            errorText.style = " display: block !important;";
+            number.style = "border-color: #dc3545;";
         }
 
     } else {
@@ -56,32 +57,32 @@ button.onclick = function () {
 
 function emptyInput() {
     if (number.value == "") {
-        number.style = "border: 2px solid red;";
+        number.style = "border-color: #dc3545;";
     } else {
-        number.style = "border-color: rgb(206, 212, 218) ";
+        number.style = "border-color: #ffffff00;";
     }
 
     if (selectPlace.value == "مكان الإقامة الحالي") {
-        selectPlace.style = "border: 2px solid red;";
+        selectPlace.style = "border-color: #dc3545;";
     } else {
-        selectPlace.style = "border-color: rgb(206, 212, 218) ";
+        selectPlace.style = "border-color: #198754;";
     }
 
     if (selectDoctor.value == "الطبيب المسؤول عن الجلسة") {
-        selectDoctor.style = "border: 2px solid red;";
+        selectDoctor.style = "border-color: #dc3545;";
     } else {
-        selectDoctor.style = "border-color: rgb(206, 212, 218) ";
+        selectDoctor.style = "border-color: #198754;";
     }
 
     if (selectSession.value == "زمن الجلسة") {
-        selectSession.style = "border: 2px solid red;";
+        selectSession.style = "border-color: #dc3545;";
     } else {
-        selectSession.style = "border-color: rgb(206, 212, 218) ";
+        selectSession.style = "border-color: #198754;";
     }
 
 
     if (!check.checked) {
-        check.style = "border: 2px solid red;";
+        check.style = "border-color: #dc3545;";
     } else {
         check.style = "border: rgb(206, 212, 218)";
     }
